@@ -18,26 +18,89 @@
     .word-color{
         color:#4f4f4f;
     }
+
+    @media(max-width:1440px) and (min-width:425px) {
+        #logo{
+            width:16%;
+            margin-top: 8%;
+        }
+        #q_form{
+            width: 40%;
+        }
+
+        #user_email{
+            width:140%;
+        }
+    }
+
+    /* Iphone5, 6, 7, 8 */
+    @media(max-width:425px) and (min-width:375px) {
+        #logo{
+            width:70%;
+            margin-top: 18%;
+        }
+        
+        #q_form{
+            width: 85%;
+        }
+
+        #q_form textarea{
+            height: 250px;
+        }
+
+        .label_text{
+            font-size: 1.6rem
+        }
+
+        #user_email{
+            width:110%;
+        }
+    }
+
+    /* Iphone5, 6, 7, 8 */
+    @media(max-width:375px){
+        #logo{
+            width:58%;
+            margin-top: 15%;
+        }
+        
+        #q_form{
+            width: 85%;
+        }
+
+        #q_form textarea{
+            height: 250px;
+        }
+
+        .label_text{
+            font-size: 1.2rem
+        }
+
+        #user_email{
+            width:90%;
+        }
+    }
+
 </style>
 
 <body>
-    <div class="container-fluid bg-theme" style=" height:1000px;" >
+    <div class="container-fluid bg-theme" style=" height:1000px;">
         <div class="d-flex justify-content-center">
-            <img src="./images/inbook_logo_2.png" alt="inbook" style="width:16%; height:50%; margin-top: 8%;">
+            <img id="logo" src="./images/inbook_logo_2.png" alt="inbook" style="height:50%; ">
         </div>
-        
+
         <!-- 這邊的 textarea 輸入框 是否要用編輯器，才比較好呈現 html 格式 -->
         <div class="d-flex justify-content-center mt-5 word-color">
-            <form style="width:40%;">
+            <form id="q_form">
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1"> ： </label>
-                    <textarea class="form-control bg-transparent border-secondary mt-4" id="exampleFormControlTextarea1" rows="10"></textarea>
+                    <label class="label_text" for="question_area"> 梳理心情： </label>
+                    <textarea class="form-control bg-transparent border-secondary mt-2" id="question_area" rows="10"></textarea>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <div class="form-group mt-5">
-                        <label for="exampleFormControlInput1">Email</label>
+                    <div class="form-group mt-4">
+                        <label class="label_text" for="user_email">Email</label>
                         <input type="email" class="form-control border border-secondary border-top-0 border-left-0 border-right-0 bg-transparent"
-                            id="exampleFormControlInput1" placeholder="" style="width:140%">
+                            id="user_email" placeholder="">
                     </div>
                     <button type="submit" class="h-50 align-self-end mb-3 btn btn-outline-secondary"> 送出 </button>
                 </div>
