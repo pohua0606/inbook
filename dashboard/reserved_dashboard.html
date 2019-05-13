@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 預約查詢 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./unans_dashboard.html">
+                <img src="../images/inbook_logo_2.png" width="150" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="btn-group btn-group-sm mr-5" role="group">
+                <a href="./reserved_dashboard.html" class="btn btn-outline-secondary active"> 預約查詢 </a>
+                <a href="./unans_dashboard.html" class="btn btn-outline-secondary "> 新發問! </a>
+                <a href="./historical_dashboard.html" class="btn btn-outline-secondary  "> 歷史回覆 </a>
+                <a href="./sell_dashboard.html" class="btn btn-outline-secondary "> 銷售資料 </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <input type="search" name="" id="" class="mb-3 form-control" style="width:20%" placeholder="Search...">
+        <table class="table border border-secondary">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"> 序號 </th>
+                    <th scope="col"> 時間 </th>
+                    <th scope="col"> 預約到期 </th>
+                    <th scope="col"> 書 </th>
+                    <th scope="col"> 預約 </th>
+                    <th scope="col"> 賣出 </th>
+                    <th scope="col"> 問題/回覆 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">-12345</th>
+                    <td>2019/5/11</td>
+                    <td> 2019/5/14 </td>
+                    <td>優秀的綿羊</td>
+                    <td class="text-success"> <b>reserved</b> </td>
+                    <td><button class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#checkout1">賣出
+                        </button></td>
+                    <td><a href="./q_and_a.html" target="_blank"><button class="btn btn-sm btn-outline-warning"> Go ! </button></a></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>寫你</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-123456</th>
+                    <td>2019/5/14</td>
+                    <td> 2019/5/17 </td>
+                    <td>分身</td>
+                    <td class="text-success"><b>reserved</b> </td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-123456</th>
+                    <td>2019/5/14</td>
+                    <td> 2019/5/17 </td>
+                    <td>你要如何衡量你的人生？</td>
+                    <td class="text-success"><b>reserved</b> </td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-123456</th>
+                    <td>2019/5/14</td>
+                    <td> 2019/5/17 </td>
+                    <td>被討厭的勇氣</td>
+                    <td class="text-success"> <b>reserved</b> </td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>讓大象飛</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>身為職業小說家</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>經濟學的40堂公開課</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>真確</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>獲利世代</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>賈伯斯傳</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>本質思考</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>異鄉人</td>
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">-1234567</th>
+                    <td>2019/5/13</td>
+                    <td> 2019/5/16 </td>
+                    <td>成長駭客</td>
+
+                    <td class="text-success"><b>reserved</b></td>
+
+                    <td><button class="btn btn-sm btn-outline-warning"> 賣出 </button></td>
+                    <td><button class="btn btn-sm btn-outline-warning"> Go ! </button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal1 -->
+    <div class="modal fade bd-example-modal-lg" id="checkout1" tabindex="-1" role="dialog" aria-labelledby="checkout1Title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="checkout1Title">結帳確認</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <small>序號</small>
+                                <h4 class="mt-3">-123456</h4>
+                            </div>
+                            <div class="col-6">
+                                <small>書</small>
+                                <h4 class="mt-3">優秀的綿羊</h4>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="price" class="col-form-label">出售金額</label>
+                                        <input type="text" class="form-control border-top-0 border-right-0 border-left-0"
+                                            id="price">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                        <button type="button" class="btn btn-warning btn-lg px-4">結帳</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
